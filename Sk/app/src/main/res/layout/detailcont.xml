@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.javogx.sk.Important.AddActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <EditText
+            android:id="@+id/nameItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/nameItem"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/bFototeca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:background="#7E57C2"
+            android:padding="10dp"
+            android:text="Usar Camara"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editPrice"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/bCamara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="#7E57C2"
+            android:padding="10dp"
+            android:text="Fototeca"
+            android:textColor="#FFFFFF"
+            android:layout_above="@+id/tvUrl"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tvUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bFototeca"
+            android:text="URL:"
+            android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:id="@+id/ivFototeca"
+        android:layout_below="@id/bFototeca"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
